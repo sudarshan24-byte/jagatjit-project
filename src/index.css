@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -15,7 +16,18 @@ body {
     /* Firefox */
 }
 
-
 .active {
     color: #CFA456;
+}
+
+
+/* Home Section */
+.hero-bg {
+    background-image: url('/Home-Images/HeroBg.png');
+    background-repeat: no-repeat;
+}
+
+.story-bg {
+    background-image: url('/Home-Images/wine-barrel.jpg');
+    background-repeat: no-repeat;
 }
