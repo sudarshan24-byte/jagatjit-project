@@ -1,0 +1,31 @@
+There are 3 folders
+├── src
+│   ├── components
+│   ├── pages
+│   ├── utils
+
+-> components - Here all the reusable components will be there.
+-> pages - Here we will write code for Web Pages and use the reusable components from the components folder.
+-> utils - utils folder is for frontend backend integration.
+
+Example:
+├── src
+│   ├── components
+│   │   ├── Home
+            ├── Heading.jsx
+
+This is a reusable component. Import it in pages file and just pass the 'name' prop.
+
+- Same structure will be followed for public folder. Add Images in the public folder based on the web pages.
+  Like :- Home page images will be in:
+  ├── public
+      ├── Home-Images
+
+   The images which will be using in all pages mention it in:
+   ├── public
+       ├── xyz.png
+    Example: logo.png
+
+- In the tailwind.config.js file 2 colors have been added and 1 font (From the figma colors scheme), use that colors (If color scheme is changed then update in that file, it will reflect to whole project.)
+
+- WHENEVER NEW CODE IS BEING ADDED/UPDATED MENTION IT IN THE PROJECT.TXT FILE.

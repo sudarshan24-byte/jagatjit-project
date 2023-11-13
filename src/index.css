@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+.active {
+    color: #CFA456;
+}
