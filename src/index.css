@@ -31,3 +31,13 @@ body {
     background-image: url('/Home-Images/wine-barrel.jpg');
     background-repeat: no-repeat;
 }
+
+.brands-bg {
+    background-image: url('/Home-Images/Rectangle59.png');
+    background-repeat: no-repeat;
+}
+
+.infrastructure-bg {
+    background-image: url('/Home-Images/Infrastructure-bg-cp.png');
+    background-repeat: no-repeat;
+}
