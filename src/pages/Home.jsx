@@ -129,10 +129,9 @@ const Home = () => {
             <div className='relative'>
                 <Heading name='White Papers' />
             </div>
+
+            {/* Location */}
             <div>Location</div>
-            {/* <div>
-                <Heading name='Our Story' />
-            </div> */}
         </div>
     )
 }
