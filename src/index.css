@@ -20,6 +20,12 @@ body {
     color: #CFA456;
 }
 
+/* Navbar */
+.navbar {
+    background-image: url('/Navbarimg.png');
+    background-repeat: no-repeat;
+}
+
 
 /* Home Section */
 .hero-bg {
