@@ -8,7 +8,7 @@ import OurStory from './pages/OurStory'
 
 const App = () => {
   return (
-    <div className='text-secondary font-arya'>
+    <div className='bg-primary-bg text-secondary font-arya'>
       <BrowserRouter>
         {/* <HomeNavbar /> */}
         <Routes>
