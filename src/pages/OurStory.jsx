@@ -5,7 +5,7 @@ const OurStory = () => {
     return (
         <div>
             <Navbar />
-            <div>Our Story</div>
+            <div className=''>Our Story</div>
         </div>
     )
 }

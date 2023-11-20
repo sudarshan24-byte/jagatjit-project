@@ -3,14 +3,26 @@ import logo from '/logo.png'
 import { Link, NavLink } from 'react-router-dom'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai'
 
+import UpperNav from './UpperNav';
+
+
 const HomeNavbar = () => {
     const [nav, setNav] = useState(false)
     const handleNavbar = () => {
         setNav(!nav)
     }
+
+    const [nav2, setNav2] = useState(false)
+    const toggleUppernav = () => {
+        setNav2(!nav2);
+    };
+
     return (
         <>
-            <nav className='w-full fixed top-0 z-30 bg-primary-bg/90 text-white h-[80px] font-arya shadow-xl'>
+            {nav2 ? <UpperNav onClose={toggleUppernav} /> : <div />}
+
+
+            <nav className='w-full fixed top-0 z-20 bg-primary-bg/90 text-white h-[80px] font-arya shadow-xl'>
                 <div className='max-w-full px-6 py-2 relative flex justify-between items-center h-full'>
                     <div className='flex items-center'>
                         <img src={logo} alt="" width={80} className='' />
@@ -71,8 +83,8 @@ const HomeNavbar = () => {
                                     <AiOutlineSearch />
                                 </div>
                             </div>
-                            <div className='mx-2'>
-                                <AiOutlineMenu />
+                            <div className='mx-2 cursor-pointer' onClick={toggleUppernav}>
+                                <AiOutlineMenu style={{ fontSize: '25px' }} />
                             </div>
                         </div>
                     </div>

@@ -7,6 +7,8 @@ import Card from '../components/Home/Card'
 import Brands from '../components/Home/Brands'
 import Infrastructure from '../components/Home/Infrastructure'
 import HomeNavbar from '../components/HomeNavbar'
+import IconCards from '../components/Home/IconCards'
+
 
 const Home = () => {
     return (
@@ -129,8 +131,18 @@ const Home = () => {
                 </div>
 
                 {/* White Papers */}
-                <div className='relative'>
-                    <Heading name='White Papers' />
+                <div className='White-bg bg-cover'>
+                    <div className=' bg-black/80'>
+                        <div className='relative'>
+                            <Heading name='White Papers' />
+                        </div>
+                        <div className='flex flex-wrap md:gap-12 justify-center'>
+                            <IconCards imageSrc={homeImages.icons1} additionalText='Financial Reports' />
+                            <IconCards imageSrc={homeImages.icons2} additionalText='Reports & Policies' />
+                            <IconCards imageSrc={homeImages.icons3} additionalText='Deposit Schemes' />
+                            <IconCards imageSrc={homeImages.icons4} additionalText='Code of Conduct' />
+                        </div>
+                    </div>
                 </div>
 
                 {/* Location */}

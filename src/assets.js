@@ -9,6 +9,10 @@ import rect55 from '/Home-Images/Rectangle55.png'
 import rect520 from '/Home-Images/Rectangle520.png'
 import rect521 from '/Home-Images/Rectangle521.png'
 import rect522 from '/Home-Images/Rectangle522.png'
+import icons1 from '/Home-Images/img_icons011.png'
+import icons2 from '/Home-Images/img_icons021.png'
+import icons3 from '/Home-Images/img_icons031.png'
+import icons4 from '/Home-Images/img_icons041.png'
 
 export const homeImages = {
     heritage,
@@ -21,5 +25,9 @@ export const homeImages = {
     rect55,
     rect520,
     rect521,
-    rect522
+    rect522,
+    icons1,
+    icons2,
+    icons3,
+    icons4
 }
