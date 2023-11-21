@@ -48,3 +48,13 @@ body {
     background-image: url('/Home-Images/Infrastructure-bg-cp.png');
     background-repeat: no-repeat;
 }
+
+.White-bg {
+    background-image: url('/Home-Images/white.png');
+    background-repeat: no-repeat;
+}
+
+.footer-bg {
+    background-image: url('/footer.png');
+    background-repeat: no-repeat;
+}

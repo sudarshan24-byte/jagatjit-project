@@ -3,7 +3,7 @@ import React from 'react'
 const Infrastructure = ({ title, description, img }) => {
     return (
         // <div className='grid grid-cols-2 place-items-center'>
-        <div className='w-[23rem] md:w-[33rem] my-10'>
+        <div className='w-[23rem] md:w-[33rem] my-10 hover:-translate-y-4 duration-300 hover:shadow-2xl backdrop-blur-2xl rounded-lg'>
             <img src={img} alt="image" className='w-full' />
             <div className='text-center'>
                 <div className='text-white text-3xl md:text-5xl my-2'>{title}</div>

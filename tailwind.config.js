@@ -8,7 +8,8 @@ export default {
     extend: {
       colors: {
         'primary-bg': '#040303',
-        'secondary': '#CFA456'
+        'secondary': '#CFA456',
+        'card-bg': '#161515'
       },
       fontFamily: {
         'arya': ['Arya', 'sans-serif']

@@ -53,19 +53,19 @@ const HomeNavbar = () => {
                         <img src={logo} alt="" width={20} className='w-1/2 ml-2 mt-2' />
                         <ul className='py-10 pl-7'>
                             <li className='text-xl py-1'>
-                                <Link to='Home'>Home</Link>
+                                <Link>Home</Link>
                             </li>
                             <li className='text-xl py-1'>
-                                <Link to='story'>Our Story</Link>
+                                <Link>Our Story</Link>
                             </li>
                             <li className='text-xl py-1'>
-                                <Link to='/brands'>Brands</Link>
+                                <Link>Brands</Link>
                             </li>
                             <li className='text-xl py-1'>
-                                <Link to='/infrastructurends'>Infrastructure</Link>
+                                <Link>Infrastructure</Link>
                             </li>
                             <li className='text-xl py-1'>
-                                <Link to='/white-papers'>White Papers</Link>
+                                <Link>White Papers</Link>
                             </li>
                             {/* <li className='text-xl py-1'>
                                 <Link>Home</Link>
