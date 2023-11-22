@@ -32,7 +32,7 @@ const HomeNavbar = () => {
                                     <NavLink to='/'>Home</NavLink>
                                 </div>
                                 <div>
-                                    <NavLink to='/story'>Our Story</NavLink>
+                                    <NavLink to='/our-story'>Our Story</NavLink>
                                 </div>
                                 <div>
                                     <NavLink to='/brands'>Brands</NavLink>
