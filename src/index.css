@@ -63,3 +63,9 @@ body {
     background-image: url('/footer.png');
     background-repeat: no-repeat;
 }
+
+.OurStory-bg {
+    background-image: url('/Our-Story/outsto.png');
+    background-repeat: no-repeat;
+}
+

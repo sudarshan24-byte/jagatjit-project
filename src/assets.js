@@ -19,7 +19,8 @@ import location from '/Home-Images/location.png'
 import bottle1 from '/Home-Images/Brands/Bottle1.png'
 import bottle2 from '/Home-Images/Brands/Bottle-2.png'
 import bottle3 from '/Home-Images/Brands/Bottle-3.png'
-
+import onwer from '/Our-Story/onwer.png'
+import wine from '/Our-Story/wine.png'
 import footer from '/footerr.png'
 
 export const logoimg = {
@@ -49,4 +50,10 @@ export const homeImages = {
 
 export const footerImages = {
     footer
+}
+
+export const ourStroyImages = {
+    onwer,
+    wine
+    
 }
