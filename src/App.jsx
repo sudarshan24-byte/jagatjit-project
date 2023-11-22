@@ -9,7 +9,7 @@ import Footer2 from './components/Footer2'
 
 const App = () => {
   return (
-    <div className='bg-primary-bg text-secondary font-arya'>
+    <div className='bg-primary-bg text-secondary font-arya overflow-x-hidden box-border'>
       <BrowserRouter>
         {/* <HomeNavbar /> */}
         <Routes>

@@ -149,7 +149,7 @@ const Home = () => {
 
 
                         {/* Location */}
-                        <div className='flex justify-between items-center pt-16 md:pt-5 lg:py-0'>
+                        <div className='flex justify-between items-center place-content-center pt-16 md:pt-5 lg:py-0'>
                             <div className='h-20 md:h-64 lg:h-[28rem] my-20'>
                                 <img src={homeImages.location} alt="location" className='z-30 w-[90%]' />
                             </div>
