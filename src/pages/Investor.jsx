@@ -3,15 +3,19 @@ import Navbar from '../components/Navbar'
 import PdfCard from '../components/Investor/PdfCard'
 
 const Investor = () => {
-    
+
     return (
         <div>
-            <Navbar PageName={'Investor'} />
+            <Navbar
+                pageName={'Investor'}
+                links={['Annual Reports']}
+                width='30'
+            />
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Annual Reports
+                            Annual Reports
                         </div>
                     </div>
                 </div>
@@ -31,13 +35,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Quarterly Financial Reports
+                            Quarterly Financial Reports
                         </div>
                     </div>
                 </div>
@@ -69,13 +73,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Notices Of AGM
+                            Notices Of AGM
                         </div>
                     </div>
                 </div>
@@ -94,13 +98,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Results Of AGM
+                            Results Of AGM
                         </div>
                     </div>
                 </div>
@@ -112,56 +116,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
-            </div>
-            <div>
-                <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
-                    <div className=' text-left justify-start  pr-10'>
-                        <div className=' text-3xl text-white font-extrabold'>
-                        Share Holding Pattern
-                        </div>
-                    </div>
                 </div>
-                <div className=' flex flex-col items-center gap-1 mx-3'>
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                    <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Informations for Physical Shareholders
+                            Share Holding Pattern
                         </div>
                     </div>
                 </div>
@@ -178,13 +139,33 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Intimation To Stock Exchange
+                            Informations for Physical Shareholders
                         </div>
                     </div>
                 </div>
@@ -193,13 +174,21 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Corporate Governance Reports
+                            Intimation To Stock Exchange
                         </div>
                     </div>
                 </div>
@@ -208,13 +197,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Corporate Announcements
+                            Corporate Governance Reports
                         </div>
                     </div>
                 </div>
@@ -223,13 +212,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Corporate Announcements
+                            Corporate Announcements
                         </div>
                     </div>
                 </div>
@@ -238,13 +227,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Details Under Regulation 46
+                            Corporate Announcements
                         </div>
                     </div>
                 </div>
@@ -253,13 +242,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Composition of Board and It’s Committees
+                            Details Under Regulation 46
                         </div>
                     </div>
                 </div>
@@ -268,13 +257,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Accounts And Subsidiary Companies
+                            Composition of Board and It’s Committees
                         </div>
                     </div>
                 </div>
@@ -283,13 +272,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Postal Ballet
+                            Accounts And Subsidiary Companies
                         </div>
                     </div>
                 </div>
@@ -298,13 +287,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Contacts
+                            Postal Ballet
                         </div>
                     </div>
                 </div>
@@ -313,13 +302,13 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
             <div>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>
-                        Deposit Scheme
+                            Contacts
                         </div>
                     </div>
                 </div>
@@ -328,12 +317,27 @@ const Investor = () => {
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
                     <PdfCard pdfName={'Draft From MGT '} />
-                </div>  
+                </div>
             </div>
-                      
-                          
-       </div>
-        
+            <div>
+                <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
+                    <div className=' text-left justify-start  pr-10'>
+                        <div className=' text-3xl text-white font-extrabold'>
+                            Deposit Scheme
+                        </div>
+                    </div>
+                </div>
+                <div className=' flex flex-col items-center gap-1 mx-3'>
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                    <PdfCard pdfName={'Draft From MGT '} />
+                </div>
+            </div>
+
+
+        </div>
+
     )
 }
 

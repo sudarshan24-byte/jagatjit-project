@@ -7,6 +7,7 @@ import HomeNavbar from './components/HomeNavbar'
 import OurStory from './pages/OurStory'
 import Footer2 from './components/Footer2'
 import Investor from './pages/Investor'
+import OurProducts from './pages/OurProducts'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path='/investor' element={<Investor />} />
           <Route path="/our-story" element={<OurStory />} />
+          <Route path="/our-products" element={<OurProducts />} />
           <Route path="/login" element={<div>login</div>} />
         </Routes>
         <Footer2 />

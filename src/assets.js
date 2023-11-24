@@ -16,6 +16,8 @@ import icons3 from '/Home-Images/img_icons031.png'
 import icons4 from '/Home-Images/img_icons041.png'
 import location from '/Home-Images/location.png'
 
+import milkproduct from '/OurProducts/milk-products.png'
+
 import bottle1 from '/Home-Images/Brands/Bottle1.png'
 import bottle2 from '/Home-Images/Brands/Bottle-2.png'
 import bottle3 from '/Home-Images/Brands/Bottle-3.png'
@@ -55,5 +57,10 @@ export const footerImages = {
 export const ourStroyImages = {
     onwer,
     wine
-    
+
+}
+
+export const ourProducts = {
+    bottle1,
+    milkproduct
 }

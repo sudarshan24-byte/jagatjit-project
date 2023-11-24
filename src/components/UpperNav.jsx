@@ -2,18 +2,25 @@ import React from 'react'
 import { RxCross2 } from "react-icons/rx";
 import { FaLinkedinIn, FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import { IoMailSharp } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 const UpperNav = ({ onClose }) => {
     return (
-        <div className='fixed top-0 z-30 text-black duration-700'>
+        <div className='fixed top-0 z-40 text-black duration-700'>
             <div className='bg-white absolute w-screen'>
                 <div className='flex justify-evenly items-baseline py-10'>
                     <div>
                         <h2 className='border-b border-b-black text-black font-bold'>Our Products</h2>
                         <div className='text-sm text-[#040303]/50 my-2'>
-                            <div>Liquors</div>
-                            <div>Milk Food</div>
-                            <div>Ethanol</div>
+                            <div>
+                                <Link to='/our-products'>Liquors</Link>
+                            </div>
+                            <div>
+                                <Link to='/our-products'>Milk Food</Link>
+                            </div>
+                            <div>
+                                <Link to='/our-products'>Ethanol</Link>
+                            </div>
                         </div>
                     </div>
                     <div>
