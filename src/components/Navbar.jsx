@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { AiOutlineMenu } from 'react-icons/ai'
 import UpperNav from './UpperNav';
 
-const Navbar = () => {
+const Navbar = ({PageName}) => {
     const [isUppernavVisible, setIsUppernavVisible] = useState(false);
     const toggleUppernav = () => {
         setIsUppernavVisible(!isUppernavVisible);
@@ -13,7 +13,7 @@ const Navbar = () => {
             {isUppernavVisible ? <UpperNav onClose={toggleUppernav} /> : <div />}
             <div className='navbar bg-cover bg-neutral-950 h-full py-8'>
                 <div className='flex justify-between items-center px-10'>
-                    <h1 className='text-2xl'>Our Story</h1>
+                    <h1 className='text-2xl'>{PageName}</h1>
                     <div className='hidden lg:block'>
                         <div className='flex justify-between items-center w-[40rem] text-xl text-white/40'>
                             <div>

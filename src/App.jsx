@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import HomeNavbar from './components/HomeNavbar'
 import OurStory from './pages/OurStory'
 import Footer2 from './components/Footer2'
+import Investor from './pages/Investor'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         {/* <HomeNavbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path='/investor' element={<Investor />} />
           <Route path="/our-story" element={<OurStory />} />
           <Route path="/login" element={<div>login</div>} />
         </Routes>
