@@ -41,7 +41,7 @@ const Navbar = ({ pageName, links, width }) => {
                     </div>
                 </div>
             </nav>
-            <div className={`flex justify-between w-full lg:w-[${width}%] absolute -bottom-4 z-30 px-10`}>
+            <div className={`flex justify-between w-full lg:w-[${width}%] absolute -bottom-4 z-30 px-10 space-x-3`}>
                 {/* <div className='bg-primary-bg text-secondary px-2 py-1 border-b border-secondary'>Home</div> */}
                 {links.map((link, index) => (
                     <div key={index} className='bg-primary-bg text-secondary px-3 py-1 border-b border-secondary'>
