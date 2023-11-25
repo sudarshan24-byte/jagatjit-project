@@ -68,4 +68,8 @@ body {
     background-image: url('/Our-Story/outsto.png');
     background-repeat: no-repeat;
 }
+.Blog-bg {
+    background-image: url('/blog/blogd.png');
+    background-repeat: no-repeat;
+}
 

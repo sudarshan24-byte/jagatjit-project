@@ -9,6 +9,7 @@ import Footer2 from './components/Footer2'
 import Investor from './pages/Investor'
 import OurProducts from './pages/OurProducts'
 import Brands from './pages/Brands'
+import Blog from './pages/Blog'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/our-story" element={<OurStory />} />
           <Route path="/our-products" element={<OurProducts />} />
           <Route path='/brands' element={<Brands />} />
+          <Route path='/blog' element={<Blog />} />
           <Route path="/login" element={<div>login</div>} />
         </Routes>
         <Footer2 />

@@ -24,6 +24,7 @@ import wine from '/Our-Story/wine.png'
 import footer from '/footerr.png'
 import vodka from '/Brands/vodka.png'
 import thinker from '/Brands/Thinker.png'
+import blogss from '/blog/blog.png'
 
 export const logoimg = {
     logo
@@ -52,6 +53,10 @@ export const homeImages = {
 
 export const footerImages = {
     footer
+}
+
+export const blog = {
+    blogss
 }
 
 export const ourStroyImages = {

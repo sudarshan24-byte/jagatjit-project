@@ -11,7 +11,7 @@ const Brands = () => {
                 links={['Whisky', 'Rum', 'Gin','Vodka','Brandy','Scotch']}
                 width='30'
             />
-            {/* Liquors */}
+           
             <div className=''>
                 <div className='bg-black/70 px-10 h-full py-20'>
 
@@ -19,7 +19,7 @@ const Brands = () => {
                     Whisky
                     </h1>
 
-                    {/* Cards */}
+                    
                     <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
                         <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
                         <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
