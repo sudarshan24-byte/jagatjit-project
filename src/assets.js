@@ -25,6 +25,10 @@ import footer from '/footerr.png'
 import vodka from '/Brands/vodka.png'
 import thinker from '/Brands/Thinker.png'
 import blogss from '/blog/blog.png'
+import infra from '/Infrastructure/infra-1.png'
+import infra2 from '/Infrastructure/infra-2.png'
+import infra3 from '/Infrastructure/infra-3.png'
+import infra4 from '/Infrastructure/infra-4.png'
 
 export const logoimg = {
     logo
@@ -68,6 +72,13 @@ export const ourStroyImages = {
 export const ourProducts = {
     bottle1,
     milkproduct
+}
+
+export const Infrastructuree = {
+    infra,
+    infra2,
+    infra3,
+    infra4
 }
 
 export const brandsI = {

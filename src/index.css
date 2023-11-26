@@ -72,4 +72,20 @@ body {
     background-image: url('/blog/blogd.png');
     background-repeat: no-repeat;
 }
+.Infrastructure1-bg {
+    background-image: url('/Infrastructure/baground.png');
+    background-repeat: no-repeat;
+}
+.Infrastructure2-bg {
+    background-image: url('/Infrastructure/baground2.png');
+    background-repeat: no-repeat;
+}
+.Infrastructure3-bg {
+    background-image: url('/Infrastructure/baground3.png');
+    background-repeat: no-repeat;
+}
+.Infrastructure4-bg {
+    background-image: url('/Infrastructure/baground4.png');
+    background-repeat: no-repeat;
+}
 
