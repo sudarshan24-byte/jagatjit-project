@@ -34,16 +34,23 @@ const UpperNav = ({ onClose }) => {
                     <div>
                         <h2 className='border-b border-b-black text-black font-bold'>Ethanol Plant</h2>
                         <div className='text-sm text-[#040303]/50 my-2'>
-                            <div>xxxxxxxxxxxxxx</div>
-                            <div>xxxxxxxxxxxx</div>
+                            <div>Ethanol Plant</div>
+                            <div>IMFL</div>
+                            <div>ENA</div>
                         </div>
                     </div>
                     <div>
                         <h2 className='border-b border-b-black text-black font-bold'>CSR Framework</h2>
                         <div className='text-sm text-[#040303]/50 my-2'>
-                            <div>Eco Friendly</div>
-                            <div>Environment</div>
-                            <div>Responsible Drinking</div>
+                            <div>
+                                <Link to='/csr-framework'>Eco Friendly</Link>
+                            </div>
+                            <div>
+                                <Link to='/csr-framework'>Environment</Link>
+                            </div>
+                            <div>
+                                <Link to='/csr-framework'>Responsible Drinking</Link>
+                            </div>
                         </div>
                     </div>
                     <div className='text-black font-bold'>

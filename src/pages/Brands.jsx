@@ -8,18 +8,18 @@ const Brands = () => {
         <div>
             <Navbar
                 pageName='Brands'
-                links={['Whisky', 'Rum', 'Gin','Vodka','Brandy','Scotch']}
+                links={['Whisky', 'Rum', 'Gin', 'Vodka', 'Brandy', 'Scotch']}
                 width='30'
             />
-           
+
             <div className=''>
                 <div className='bg-black/70 px-10 h-full py-20'>
 
                     <h1 className='text-white/30 text-5xl'>
-                    Whisky
+                        Whisky
                     </h1>
 
-                    
+
                     <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
                         <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
                         <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
@@ -71,7 +71,7 @@ const Brands = () => {
                         <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
                     </div>
                     <h1 className='text-white/30 text-5xl'>
-                        Brandy 
+                        Brandy
                     </h1>
 
                     {/* Cards */}
@@ -82,7 +82,7 @@ const Brands = () => {
                         <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
                     </div>
                     <h1 className='text-white/30 text-5xl'>
-                    Scotch
+                        Scotch
                     </h1>
 
                     {/* Cards */}
@@ -97,7 +97,7 @@ const Brands = () => {
                 </div>
             </div>
 
-            
+
         </div>
     )
 }

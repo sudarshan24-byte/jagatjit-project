@@ -13,6 +13,7 @@ import Footer from '../components/Footer'
 import { FaLocationDot } from "react-icons/fa6";
 import { PiPrinterFill } from "react-icons/pi";
 import Location from '../components/Location'
+import { Link } from 'react-router-dom'
 
 
 const Home = () => {
@@ -43,20 +44,26 @@ const Home = () => {
                         {/* Right Side */}
                         <div className='grid grid-row-3 md:grid-cols-2 lg:grid-cols-3 place-items-start md:place-items-baseline lg:place-items-center w-[40%]'>
                             {/* Liqours */}
-                            <div className='flex items-center justify-start bg-stone-900 h-10 rounded-md rounded-s-2xl my-3'>
-                                <img src={homeImages.liqour} alt="liqour" width={50} className='mb-5' />
-                                <p className='px-3'>Liqours</p>
-                            </div>
+                            <Link to='/our-products'>
+                                <div className='flex items-center justify-start bg-stone-900 h-10 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
+                                    <img src={homeImages.liqour} alt="liqour" width={50} className='mb-5' />
+                                    <p className='px-3'>Liqours</p>
+                                </div>
+                            </Link>
                             {/* Milk Food */}
-                            <div className='flex items-center justify-start bg-stone-900 h-10 w-40 rounded-md rounded-s-2xl my-3'>
-                                <img src={homeImages.milkfood} alt="liqour" width={70} className='mb-5' />
-                                <p className='px-3'>Milk Food</p>
-                            </div>
+                            <Link to='/our-products'>
+                                <div className='flex items-center justify-start bg-stone-900 h-10 w-40 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
+                                    <img src={homeImages.milkfood} alt="liqour" width={70} className='mb-5' />
+                                    <p className='px-3'>Milk Food</p>
+                                </div>
+                            </Link>
                             {/* Ethanol */}
-                            <div className='flex items-center justify-start bg-stone-900 h-10 w-28 rounded-md rounded-s-2xl my-3'>
-                                <img src={homeImages.ethanol} alt="liqour" width={40} className='mb-6' />
-                                <p className='px-3'>Ethanol</p>
-                            </div>
+                            <Link to='/our-products'>
+                                <div className='flex items-center justify-start bg-stone-900 h-10 w-28 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
+                                    <img src={homeImages.ethanol} alt="liqour" width={40} className='mb-6' />
+                                    <p className='px-3'>Ethanol</p>
+                                </div>
+                            </Link>
                         </div>
 
                         {/* Left Side */}
