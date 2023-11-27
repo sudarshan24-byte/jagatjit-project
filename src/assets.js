@@ -25,8 +25,6 @@ import footer from '/footerr.png'
 import vodka from '/Brands/vodka.png'
 import thinker from '/Brands/Thinker.png'
 import blogss from '/blog/blog.png'
-import eco_friendly from '/CSRFramework/eco-friendly.png'
-
 
 export const logoimg = {
     logo
@@ -70,6 +68,13 @@ export const ourStroyImages = {
 export const ourProducts = {
     bottle1,
     milkproduct
+}
+
+export const Infrastructuree = {
+    infra,
+    infra2,
+    infra3,
+    infra4
 }
 
 export const brandsI = {
