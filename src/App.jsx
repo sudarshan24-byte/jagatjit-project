@@ -10,11 +10,9 @@ import Investor from './pages/Investor'
 import OurProducts from './pages/OurProducts'
 import Brands from './pages/Brands'
 import Blog from './pages/Blog'
-<<<<<<< HEAD
+
 import CSRFramework from './pages/CSRFramework'
-=======
 import Infrastructure from './pages/Infrastructure'
->>>>>>> e757bbef3b91b4ce94201ee7969b5468858e0d05
 
 const App = () => {
   return (
@@ -28,11 +26,8 @@ const App = () => {
           <Route path="/our-products" element={<OurProducts />} />
           <Route path='/brands' element={<Brands />} />
           <Route path='/blog' element={<Blog />} />
-<<<<<<< HEAD
           <Route path='/csr-framework' element={<CSRFramework />} />
-=======
           <Route path='/infrastructure' element={<Infrastructure />} />
->>>>>>> e757bbef3b91b4ce94201ee7969b5468858e0d05
           <Route path="/login" element={<div>login</div>} />
         </Routes>
         <Footer2 />
