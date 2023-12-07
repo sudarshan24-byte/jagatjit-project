@@ -13,6 +13,7 @@ import Blog from './pages/Blog'
 
 import CSRFramework from './pages/CSRFramework'
 import Infrastructure from './pages/Infrastructure'
+import ContactUs from './pages/ContactUs'
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path='/csr-framework' element={<CSRFramework />} />
           <Route path='/infrastructure' element={<Infrastructure />} />
           <Route path="/login" element={<div>login</div>} />
+          <Route path="/Contactus" element={<ContactUs />} />
         </Routes>
         <Footer2 />
       </BrowserRouter>

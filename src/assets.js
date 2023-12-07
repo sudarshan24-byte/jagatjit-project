@@ -27,6 +27,8 @@ import thinker from '/Brands/Thinker.png'
 import blogss from '/blog/blog.png'
 
 import eco_friendly from '/CSRFramework/eco-friendly.png'
+import ecoFri from '/CSRFramework/ecoFri.png'
+import ecofrir from '/CSRFramework/ecofri-1.png'
 
 import infra from '/Infrastructure/infra-1.png'
 import infra2 from '/Infrastructure/infra-2.png'
@@ -94,4 +96,6 @@ export const brandsI = {
 
 export const csr_framework = {
     eco_friendly,
+    ecoFri,
+    ecofrir
 }

@@ -91,6 +91,10 @@ body {
 }
 
 .csr-framework {
-    background-image: url('/Home-Images/HeroBg.png');
+    background-image: url('/CSRFramework/CsrFram.png');
+    background-repeat: no-repeat;
+}
+.ContactUS-bg {
+    background-image: url('/ContactUs/ContactUsBag.png');
     background-repeat: no-repeat;
 }
