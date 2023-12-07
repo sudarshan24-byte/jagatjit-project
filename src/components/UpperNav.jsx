@@ -55,7 +55,7 @@ const UpperNav = ({ onClose }) => {
                     </div>
                     <div className='text-black font-bold'>
                         <p className='border-b border-b-black w-fit'>Promoters & Journey</p>
-                        <p className='border-b border-b-black w-fit'>Investors</p>
+                        <Link to='/investor' className='border-b border-b-black w-fit'>Investors</Link>
                         <p className='border-b border-b-black w-fit'>Contact Us</p>
                     </div>
                     <div onClick={onClose} className='cursor-pointer'>

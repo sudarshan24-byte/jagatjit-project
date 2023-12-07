@@ -12,7 +12,7 @@ const OurStory = () => {
                 links={['Heritage', 'About Us', 'Core Values']}
                 width='30'
             />
-            <div className='OurStory-bg bg-cover'>
+            <div className='OurStory-bg bg-cover pt-36'>
                 <div>
                     <div className="flex flex-col md:flex-row items-center h-screen">
                         <div className="w-full md:w-[1000px] h-[550px] mb-4 md:mb-0 md:static ml-auto">

@@ -9,10 +9,10 @@ const Navbar = ({ pageName, links, width }) => {
         setIsUppernavVisible(!isUppernavVisible);
     };
     return (
-        <div className=''>
+        <div className='fixed top-0 z-40'>
             <div className='relative mb-2'>
                 {isUppernavVisible ? <UpperNav onClose={toggleUppernav} /> : <div />}
-                <nav className='navbar bg-cover bg-neutral-950 w-full py-4 sticky top-0 z-20'>
+                <nav className='navbar bg-cover bg-neutral-950 w-screen py-4 sticky top-0 z-20'>
                     <div className='flex justify-between items-center px-10 py-5'>
                         <h1 className='text-4xl'>{pageName}</h1>
                         <div className='hidden lg:block'>
@@ -42,7 +42,7 @@ const Navbar = ({ pageName, links, width }) => {
                         </div>
                     </div>
                 </nav>
-                <div className={`flex justify-between w-full lg:w-[${width}%] absolute -bottom-3 z-30 px-10 space-x-3`}>
+                <div className={`flex justify-between text-sm w-full lg:w-[${width}%] absolute -bottom-3 z-30 px-10 space-x-3`}>
                     {/* <div className='bg-primary-bg text-secondary px-2 py-1 border-b border-secondary'>Home</div> */}
                     {links.map((link, index) => (
                         <div key={index} className='bg-primary-bg text-secondary px-3 py-1 border-b border-secondary'>

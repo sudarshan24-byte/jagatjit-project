@@ -14,7 +14,7 @@ const OurProducts = () => {
 
             {/* Liquors */}
             <div className='White-bg bg-cover bg-center'>
-                <div className='bg-black/70 px-10 h-full py-20'>
+                <div className='bg-black/70 px-10 pt-36 h-full py-20'>
 
                     <h1 className='text-white text-5xl'>
                         Liquors

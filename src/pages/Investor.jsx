@@ -11,7 +11,7 @@ const Investor = () => {
                 links={['Annual Reports']}
                 width='30'
             />
-            <div>
+            <div className='pt-32'>
                 <div className=' lg:pl-5 md:pl-4 sm:pl-3 py-3'>
                     <div className=' text-left justify-start  pr-10'>
                         <div className=' text-3xl text-white font-extrabold'>

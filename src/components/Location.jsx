@@ -10,8 +10,8 @@ const Location = () => {
                 <img src={homeImages.location} alt="location" className='z-30 w-[90%]' />
             </div>
 
-            <div className='absolute md:right-[10%] bottom-0 grid grid-cols-2 md:grid-cols-none md:grid-rows-3 place-items-center lg:w-[30%]'>
-                <div className='bg-card-bg my-1 lg:my-5 py-2 lg:py-3 px-1 lg:px-4 text-md lg:text-2xl w-[90%] lg:h-30 rounded-md'>
+            <div className='absolute right-[1%] lg:right-[15%] bottom-0 grid grid-rows-3 place-items-stretch md:place-items-baseline lg:place-items-stretch lg:w-[30%] md:h-[70%] lg:h-[27rem]'>
+                <div className='bg-card-bg my-1 lg:my-5 py-2 lg:py-3 px-1 lg:px-4 text-md lg:text-2xl w-[90%] lg:h-30 rounded-md duration-300 hover:-translate-y-3 cursor-pointer'>
                     <div className='flex items-center'>
                         <FaLocationDot className='mx-2 lg:mx-0' />
                         <div className='mx-1 lg:mx-4'>Production Plant</div>
@@ -22,7 +22,7 @@ const Location = () => {
                     </div>
                 </div>
 
-                <div className='bg-card-bg my-1 lg:my-5 py-2 lg:py-3 px-1 lg:px-4 text-md lg:text-2xl w-[90%] lg:h-30 rounded-md'>
+                <div className='bg-card-bg my-1 lg:my-5 py-2 lg:py-3 px-1 lg:px-4 text-md lg:text-2xl w-[90%] lg:h-30 rounded-md duration-300 hover:-translate-y-3 cursor-pointer'>
                     <div className='flex items-center'>
                         <FaLocationDot className='mx-2 lg:mx-0' />
                         <div className='mx-1 lg:mx-4'>Head Office</div>
@@ -33,7 +33,7 @@ const Location = () => {
                     </div>
                 </div>
 
-                <div className='bg-card-bg my-1 lg:my-5 py-2 lg:py-3 px-3 lg:px-4 text-md lg:text-2xl w-[90%] lg:h-30 rounded-md'>
+                <div className='bg-card-bg my-1 lg:my-5 py-2 lg:py-3 px-3 lg:px-4 text-md lg:text-2xl w-[90%] lg:h-30 rounded-md duration-300 hover:-translate-y-3 cursor-pointer'>
                     <div className='flex items-center'>
                         <PiPrinterFill />
                         <div className='mx-4'>Fax Number</div>

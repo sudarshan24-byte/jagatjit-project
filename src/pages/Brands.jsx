@@ -13,7 +13,7 @@ const Brands = () => {
             />
 
             <div className=''>
-                <div className='bg-black/70 px-10 h-full py-20'>
+                <div className='bg-black/70 px-10 h-full py-20 pt-36'>
 
                     <h1 className='text-white/30 text-5xl'>
                         Whisky

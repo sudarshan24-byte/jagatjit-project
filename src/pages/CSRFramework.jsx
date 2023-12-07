@@ -10,7 +10,7 @@ const CSRFramework = () => {
                 links={['Eco Friendly', 'Environment', 'Responsible Drinking']}
                 width='50'
             />
-            <div className='csr-framework bg-cover'>
+            <div className='csr-framework bg-cover pt-36'>
                 <div className='bg-black/60 py-20 px-10'>
 
                     {/* Eco Friendly */}
@@ -20,9 +20,9 @@ const CSRFramework = () => {
 
                     <div className='bg-white/10 px-10 py-5 flex'>
                         <div>
-                            <img src={csr_framework.eco_friendly} alt="" className='bg-white/5 p-3 rounded-lg' />
+                            <img src={csr_framework.eco_friendly} alt="" className='bg-white/5 p-3 rounded-lg' width={320} />
                         </div>
-                        <div className='w-[80%] pl-4 text-xl'>
+                        <div className='w-[1002px] mx-4 text-xl'>
                             Jagatjit’s business activities directly affect the lives of millions of people across the country,
                             be it consumers, employees, investors or commercial partners. This brings a responsibility to be a good
                             corporate citizen and seek to ensure that all those with a stake in Jagatjit can benefit from the
