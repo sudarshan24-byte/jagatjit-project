@@ -98,3 +98,11 @@ body {
     background-image: url('/ContactUs/ContactUsBag.png');
     background-repeat: no-repeat;
 }
+.MediaDocument-bg {
+    background-image: url('/MediaAndAwards/baground.png');
+    background-repeat: no-repeat;
+}
+.Media-bg {
+    background-image: url('/MediaAndAwards/bagr.png');
+    background-repeat: no-repeat;
+}

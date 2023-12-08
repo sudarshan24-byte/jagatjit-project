@@ -34,6 +34,14 @@ import infra from '/Infrastructure/infra-1.png'
 import infra2 from '/Infrastructure/infra-2.png'
 import infra3 from '/Infrastructure/infra-3.png'
 import infra4 from '/Infrastructure/infra-4.png'
+import Media_1 from '/MediaAndAwards/Media-1.png'
+import Media_2 from '/MediaAndAwards/Media-2.png'
+import Media_3 from '/MediaAndAwards/Media-3.png'
+import Media_11 from '/MediaAndAwards/Media-11.png'
+import Media_22 from '/MediaAndAwards/Media-22.png'
+import Media_33 from '/MediaAndAwards/Media-33.png'
+import documentt from '/MediaAndAwards/documnet.png'
+
 
 export const logoimg = {
     logo
@@ -98,4 +106,14 @@ export const csr_framework = {
     eco_friendly,
     ecoFri,
     ecofrir
+}
+
+export const Medai_Awards = {
+    Media_1,
+    Media_2,
+    Media_3,
+    Media_11,
+    Media_22,
+    Media_33,
+    documentt
 }

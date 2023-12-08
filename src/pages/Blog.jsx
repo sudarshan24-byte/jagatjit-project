@@ -7,7 +7,7 @@ const Blog = () => {
     return (
         <div>
             <Navbar
-                pageName='Media & Awards'
+                pageName='Blogs'
                 links={['Press & Awards', 'Blogs', 'Certifications']}
                 width='30'
             />
