@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AiOutlineMenu } from 'react-icons/ai'
 import UpperNav from './UpperNav';
+import { AnimatePresence } from 'framer-motion';
 
 const Navbar = ({ pageName, links, width }) => {
     const [isUppernavVisible, setIsUppernavVisible] = useState(false);
@@ -11,7 +12,9 @@ const Navbar = ({ pageName, links, width }) => {
     return (
         <div className='fixed top-0 z-40'>
             <div className='relative mb-2'>
-                {isUppernavVisible ? <UpperNav onClose={toggleUppernav} /> : <div />}
+                <AnimatePresence>
+                    {isUppernavVisible && <UpperNav onClose={toggleUppernav} nav={isUppernavVisible} />}
+                </AnimatePresence>
                 <nav className='navbar bg-cover bg-neutral-950 w-screen py-4 sticky top-0 z-20'>
                     <div className='flex justify-between items-center px-10 py-5'>
                         <h1 className='text-4xl'>{pageName}</h1>
@@ -37,7 +40,7 @@ const Navbar = ({ pageName, links, width }) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='block lg:hidden cursor-pointer'>
+                        <div onClick={toggleUppernav} className='block lg:hidden cursor-pointer'>
                             <AiOutlineMenu style={{ fontSize: '25px', color: 'white' }} />
                         </div>
                     </div>
