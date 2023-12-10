@@ -9,7 +9,7 @@ const Card = ({ image, text, link }) => {
                     <img
                         src={image}
                         alt={text}
-                        className="object-cover bg-cover w-[23rem] opacity-30 lg:w-[25rem] h-60  rounded-md lg:h-64"
+                        className="object-cover bg-cover opacity-50 w-[23rem] lg:w-[25rem] h-60  rounded-md lg:h-64"
                     />
                 </div>
                 <div className="absolute top-1/2 left-0 right-0 transform -translate-y-1/2">

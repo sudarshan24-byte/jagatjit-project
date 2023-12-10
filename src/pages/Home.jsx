@@ -14,7 +14,31 @@ import { FaLocationDot } from "react-icons/fa6";
 import { PiPrinterFill } from "react-icons/pi";
 import Location from '../components/Location'
 import { Link } from 'react-router-dom'
+import { motion } from "framer-motion";
 
+
+const textVariants = {
+    initial: {
+        x: -500,
+        opacity: 0,
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 1,
+            staggerChildren: 0.1,
+        },
+    },
+    scrollButton: {
+        opacity: 0,
+        y: 10,
+        transition: {
+            duration: 2,
+            repeat: Infinity,
+        },
+    },
+};
 
 const Home = () => {
     return (
@@ -22,19 +46,24 @@ const Home = () => {
             <HomeNavbar />
             <div>
                 {/* Hero Section Starts */}
-                <div className=''>
+                <motion.div
+                    initial="initial"
+                    animate="animate"
+                    className=''>
                     <div className='hero-bg w-screen bg-center md:bg-cover h-[calc(100vh-140px)] flex justify-start items-center px-10'>
-                        <div className='text-start'>
+                        <motion.div variants={textVariants} className='text-start'>
                             <p className='text-white text-5xl'>
                                 Discover Our Exclusive Selection
                             </p>
                             <p className='w-[70%] text-[#F4DFB682] my-5'>
                                 Embark on a Journey of Unparalleled Quality and Taste, Where Every Sip Transcends the Ordinary
                             </p>
-                            <button>
-                                <div className='border px-4 py-2 my-5'>Explore Whiskies</div>
-                            </button>
-                        </div>
+                            <Link to='/brands'>
+                                <motion.button variants={textVariants} className='hover:scale-105 duration-200'>
+                                    <div className='border px-4 py-2 my-5 hover:scale-105 duration-200'>Explore Whiskies</div>
+                                </motion.button>
+                            </Link>
+                        </motion.div>
                         {/* <img src={rect27} alt="" /> */}
                     </div>
 
@@ -42,32 +71,32 @@ const Home = () => {
 
                     <div className='max-w-full px-5 md:px-10 py-12 relative flex justify-between items-center h-full bg-primary-bg'>
                         {/* Right Side */}
-                        <div className='grid grid-row-3 md:grid-cols-2 lg:grid-cols-3 place-items-start md:place-items-baseline lg:place-items-center w-[40%]'>
+                        <motion.div variants={textVariants} className='grid grid-row-3 md:grid-cols-2 lg:grid-cols-3 place-items-start md:place-items-baseline lg:place-items-center w-[40%]'>
                             {/* Liqours */}
                             <Link to='/our-products'>
-                                <div className='flex items-center justify-start bg-stone-900 h-10 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
+                                <motion.div className='flex items-center justify-start bg-stone-900 h-10 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
                                     <img src={homeImages.liqour} alt="liqour" width={50} className='mb-5' />
                                     <p className='px-3'>Liqours</p>
-                                </div>
+                                </motion.div>
                             </Link>
                             {/* Milk Food */}
                             <Link to='/our-products'>
-                                <div className='flex items-center justify-start bg-stone-900 h-10 w-40 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
+                                <motion.div className='flex items-center justify-start bg-stone-900 h-10 w-40 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
                                     <img src={homeImages.milkfood} alt="liqour" width={70} className='mb-5' />
                                     <p className='px-3'>Milk Food</p>
-                                </div>
+                                </motion.div>
                             </Link>
                             {/* Ethanol */}
                             <Link to='/our-products'>
-                                <div className='flex items-center justify-start bg-stone-900 h-10 w-28 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
+                                <motion.div className='flex items-center justify-start bg-stone-900 h-10 w-28 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
                                     <img src={homeImages.ethanol} alt="liqour" width={40} className='mb-6' />
                                     <p className='px-3'>Ethanol</p>
-                                </div>
+                                </motion.div>
                             </Link>
-                        </div>
+                        </motion.div>
 
                         {/* Left Side */}
-                        <div className='text-white grid grid-row-3 md:grid-cols-2 lg:grid-cols-3 place-items-start md:place-items-baseline lg:place-items-center w-[40%]'>
+                        <motion.div variants={textVariants} className='text-white grid grid-row-3 md:grid-cols-2 lg:grid-cols-3 place-items-start md:place-items-baseline lg:place-items-center w-[40%]'>
                             <div className='flex items-center justify-start h-10 rounded-md rounded-s-2xl my-3'>
                                 <div className='text-3xl'>3</div>
                                 <p className='px-3 w-[100%] lg:w-[60%] text-xs'>Third largest producer of IMFL</p>
@@ -80,14 +109,14 @@ const Home = () => {
                                 <div className='text-lg lg:text-3xl'>1994</div>
                                 <p className='px-3 w-[100%] lg:w-[60%] text-xs'>Since 1994. We've been crafting</p>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
-                </div>
+                </motion.div>
                 {/* Hero Section Ends */}
 
                 {/* Our Story */}
                 <div className='w-full h-full story-bg bg-cover'>
-                    <div className='bg-black/80 py-20 px-6'>
+                    <div className='bg-black/70 py-20 px-6'>
                         <Heading name='Our Story' />
                         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                             <Card image={homeImages.heritage} text='Heritage' link='/our-story' />
@@ -115,7 +144,7 @@ const Home = () => {
 
                 {/* Infrastructure */}
                 <div className='infrastructure-bg relative bg-cover bg-center'>
-                    <div className='bg-black/80 py-5'>
+                    <div className='bg-black/60 py-5'>
                         <Heading name='Infrastructure' />
                         <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center py-6'>
                             <Infrastructure
@@ -144,7 +173,7 @@ const Home = () => {
 
                 {/* White Papers */}
                 <div className='White-bg bg-cover bg-center'>
-                    <div className=' bg-black/80'>
+                    <div className=' bg-black/60'>
                         <div className='relative'>
                             <Heading name='White Papers' />
                         </div>

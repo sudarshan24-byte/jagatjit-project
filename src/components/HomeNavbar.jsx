@@ -4,7 +4,21 @@ import { Link, NavLink } from 'react-router-dom'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai'
 
 import UpperNav from './UpperNav';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+
+const variants = {
+    initial: {
+        opacity: 0,
+        y: -5,
+    },
+    animate: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 1,
+        }
+    }
+}
 
 
 const HomeNavbar = () => {
@@ -19,13 +33,13 @@ const HomeNavbar = () => {
     };
 
     return (
-        <>
+        <motion.div variants={variants} initial='initial' animate='animate'>
             <AnimatePresence>
                 {nav2 && <UpperNav onClose={toggleUppernav} nav={nav2} />}
             </AnimatePresence>
 
 
-            <nav className='w-full fixed top-0 z-20 bg-primary-bg/90 text-white h-[80px] font-arya shadow-xl'>
+            <motion.nav variants={variants} className='w-full fixed top-0 z-20 bg-primary-bg/90 text-white h-[80px] font-arya shadow-xl'>
                 <div className='max-w-full px-6 py-2 relative flex justify-between items-center h-full'>
                     <div className='flex items-center'>
                         <img src={logo} alt="" width={80} className='' />
@@ -92,8 +106,8 @@ const HomeNavbar = () => {
                         </div>
                     </div>
                 </div>
-            </nav>
-        </>
+            </motion.nav>
+        </motion.div>
     )
 }
 

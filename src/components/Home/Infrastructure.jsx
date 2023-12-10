@@ -11,7 +11,7 @@ const Infrastructure = ({ title, description, img }) => {
                     <div className='text-white text-3xl md:text-5xl my-2'>{title}</div>
                     <div className='text-white text-md md:text-lg px-10 my-2'>{description}</div>
                     <button>
-                        <div className='border border-secondary bg-black px-3 py-1 my-5'>Read More</div>
+                        <div className='border border-secondary bg-black px-3 py-1 my-5 hover:scale-105 duration-200'>Read More</div>
                     </button>
                 </div>
             </div>
