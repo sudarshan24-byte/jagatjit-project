@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Heading from '../components/Home/Heading'
 import { homeImages } from '../assets'
 import rect27 from '/Home-Images/Rectangle27.png'
@@ -14,8 +14,23 @@ import { FaLocationDot } from "react-icons/fa6";
 import { PiPrinterFill } from "react-icons/pi";
 import Location from '../components/Location'
 import { Link } from 'react-router-dom'
-import { motion } from "framer-motion";
-import AOS from 'aos'
+import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
+
+
+const imageAnimate = {
+    offscreen: { x: -100, opacity: 0 },
+    onscreen: {
+        x: 0,
+        opacity: 1,
+        // rotate: [0, 10, 0],
+        transition: {
+            type: "tween",
+            bounce: 0.4,
+            duration: 1
+        }
+    }
+
+}
 
 
 const textVariants = {
@@ -76,21 +91,21 @@ const Home = () => {
                         <motion.div variants={textVariants} className='grid grid-row-3 md:grid-cols-2 lg:grid-cols-3 place-items-start md:place-items-baseline lg:place-items-center w-[40%]'>
                             {/* Liqours */}
                             <Link to='/our-products'>
-                                <motion.div variants={textVariants} className='flex items-center justify-start bg-stone-900 h-10 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
+                                <motion.div className='flex items-center justify-start bg-stone-900 h-10 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
                                     <img src={homeImages.liqour} alt="liqour" width={50} className='mb-5' />
                                     <p className='px-3'>Liqours</p>
                                 </motion.div>
                             </Link>
                             {/* Milk Food */}
                             <Link to='/our-products'>
-                                <motion.div variants={textVariants} className='flex items-center justify-start bg-stone-900 h-10 w-40 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
+                                <motion.div className='flex items-center justify-start bg-stone-900 h-10 w-40 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
                                     <img src={homeImages.milkfood} alt="liqour" width={70} className='mb-5' />
                                     <p className='px-3'>Milk Food</p>
                                 </motion.div>
                             </Link>
                             {/* Ethanol */}
                             <Link to='/our-products'>
-                                <motion.div variants={textVariants} className='flex items-center justify-start bg-stone-900 h-10 w-28 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
+                                <motion.div className='flex items-center justify-start bg-stone-900 h-10 w-28 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
                                     <img src={homeImages.ethanol} alt="liqour" width={40} className='mb-6' />
                                     <p className='px-3'>Ethanol</p>
                                 </motion.div>
@@ -120,11 +135,17 @@ const Home = () => {
                 <div className='w-full h-full story-bg bg-cover'>
                     <div className='bg-black/70 py-20 px-6'>
                         <Heading name='Our Story' />
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+                        <motion.div
+                            initial={"offscreen"}
+                            whileInView={"onscreen"}
+                            viewport={{ once: true }}
+                            // transition={{ staggerChildren: 0.5 }}
+                            variants={imageAnimate}
+                            className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                             <Card image={homeImages.heritage} text='Heritage' link='/our-story' />
                             <Card image={homeImages.corevalues} text='Core Values' link='/our-story' />
                             <Card image={homeImages.aboutus_bg} text='About Us' link='/our-story' />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
 
@@ -133,22 +154,28 @@ const Home = () => {
                 <div className='brands-bg bg-cover bg-center'>
                     <div className='py-28'>
                         <Heading name='Brands' />
-                        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 place-items-center'>
+                        <motion.div
+                            initial={"offscreen"}
+                            whileInView={"onscreen"}
+                            viewport={{ once: true }}
+                            // transition={{ staggerChildren: 0.5 }}
+                            variants={imageAnimate}
+                            className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 place-items-center'>
                             <Brands img={homeImages.bottle1} text='WHISKY' />
                             <Brands img={homeImages.bottle1} text='RUM' />
                             <Brands img={homeImages.bottle1} text='GIN' />
                             <Brands img={homeImages.bottle1} text='VODKA' />
                             <Brands img={homeImages.bottle1} text='BRANDY' />
                             <Brands img={homeImages.bottle1} text='SCOTCH' />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
 
                 {/* Infrastructure */}
-                <div className='infrastructure-bg relative bg-cover bg-center'>
+                <motion.div className='infrastructure-bg relative bg-cover bg-center'>
                     <div className='bg-black/60 py-5'>
                         <Heading name='Infrastructure' />
-                        <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center py-6'>
+                        <motion.div className='grid grid-cols-1 lg:grid-cols-2 place-items-center py-6'>
                             <Infrastructure
                                 title='Global Presence'
                                 description='6500 kilometers away from Scotland, Jagatjit Industries Limited has created the perfect production facility for making...'
@@ -169,9 +196,9 @@ const Home = () => {
                                 description='6500 kilometers away from Scotland, Jagatjit Industries Limited has created the perfect production facility for making...'
                                 img={homeImages.rect522}
                             />
-                        </div>
+                        </motion.div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* White Papers */}
                 <div className='White-bg bg-cover bg-center'>
