@@ -13,7 +13,7 @@ const variants = {
         duration: 0.9,
         transition: {
             opacity: { duration: .9 },
-            x: { type: "tween", stiffness: 100, damping: 10 },
+            x: { type: "spring", stiffness: 100, damping: 30 },
         },
     },
     closed: { x: '-100%', opacity: 0, transition: { opacity: { duration: 0.9 }, x: { type: "spring", stiffness: 100, damping: 30 }, } },
@@ -39,10 +39,10 @@ const UpperNav = ({ onClose, nav }) => {
             <motion.div variants={variants} className='bg-white absolute w-screen'>
                 <motion.div variants={variants} className='grid grid-cols-2 place-items-center md:grid md:grid-cols-3 md:place-items-center lg:flex lg:justify-evenly lg:items-baseline py-10'>
                     <div className=''>
-                        <h2 className='border-b border-b-black text-black font-bold'>Our Products</h2>
+                        <Link to='/our-products' className='border-b border-b-black text-black font-bold'>Our Products</Link>
                         <div className='text-sm text-[#040303]/50 my-2'>
                             <div>
-                                <Link to='/our-products'>Liquors</Link>
+                                <Link to='/brands'>Liquors</Link>
                             </div>
                             <div>
                                 <Link to='/our-products'>Milk Food</Link>

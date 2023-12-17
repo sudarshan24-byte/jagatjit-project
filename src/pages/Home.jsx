@@ -127,7 +127,7 @@ const Home = () => {
                         {/* Right Side */}
                         <motion.div variants={textVariants} className='grid grid-row-3 md:grid-cols-2 lg:grid-cols-3 place-items-start md:place-items-baseline lg:place-items-center w-[40%]'>
                             {/* Liqours */}
-                            <Link to='/our-products'>
+                            <Link to='/brands'>
                                 <motion.div className='flex items-center justify-start bg-stone-900 h-10 rounded-md rounded-s-2xl my-3 hover:-translate-y-2 duration-300'>
                                     <img src={homeImages.liqour} alt="liqour" width={50} className='mb-5' />
                                     <p className='px-3'>Liqours</p>
