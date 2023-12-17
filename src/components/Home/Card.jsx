@@ -1,26 +1,62 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
-const Card = ({ image, text, link }) => {
+const imageAnimate = {
+    offscreen: { x: -100, opacity: 0 },
+    onscreen: {
+        x: 0,
+        opacity: 1,
+        // rotate: [0, 10, 0],
+        transition: {
+            type: "tween",
+            bounce: 0.4,
+            duration: 1
+        }
+    },
+    right: {
+        y: -100, opacity: 0
+    },
+    rightAnimate: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            type: "tween",
+            // bounce: 0.4,
+            duration: .5
+        }
+    }
+
+}
+
+const Card = ({ image, text, link, variants, initial, animation }) => {
     return (
-        <Link to={link} className="max-w-lg mx-auto ">
-            <div className="relative bg-black hover:-translate-y-3 duration-300">
-                <div className='border border-secondary mb-8 md:mb-2 lg:mb-0 rounded-md'>
-                    <img
-                        src={image}
-                        alt={text}
-                        className="object-cover bg-cover opacity-50 w-[23rem] lg:w-[25rem] h-60  rounded-md lg:h-64"
-                    />
+        <motion.div
+            variants={variants}
+            initial={initial}
+            whileInView={animation}
+            viewport={{ once: true }}
+            className='w-fit mx-auto'>
+            <Link to={link} className="max-w-lg mx-auto ">
+                <div
+                    className="relative bg-black hover:-translate-y-3 duration-300">
+                    <div className='border border-secondary mb-8 md:mb-2 lg:mb-0 rounded-md'>
+                        <img
+                            src={image}
+                            alt={text}
+                            className="object-cover bg-cover opacity-50 w-[23rem] lg:w-[25rem] h-60  rounded-md lg:h-64"
+                        />
+                    </div>
+                    <div className="absolute top-1/2 left-0 right-0 transform -translate-y-1/2">
+                        <div className="absolute top-0 left-0 text-white w-[50%] mx-auto right-0 h-[0.8px] bg-white"></div>
+                        <p className="text-center text-white text-4xl font-semibold py-1">
+                            {text}
+                        </p>
+                        <div className="absolute bottom-0 left-0 right-0 w-[50%] mx-auto text-white h-[0.8px] bg-white"></div>
+                    </div>
                 </div>
-                <div className="absolute top-1/2 left-0 right-0 transform -translate-y-1/2">
-                    <div className="absolute top-0 left-0 text-white w-[50%] mx-auto right-0 h-[0.8px] bg-white"></div>
-                    <p className="text-center text-white text-4xl font-semibold py-1">
-                        {text}
-                    </p>
-                    <div className="absolute bottom-0 left-0 right-0 w-[50%] mx-auto text-white h-[0.8px] bg-white"></div>
-                </div>
-            </div>
-        </Link>
+            </Link>
+        </motion.div>
     )
 }
 

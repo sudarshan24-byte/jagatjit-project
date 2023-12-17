@@ -32,7 +32,7 @@ const App = () => {
             <Route path='/csr-framework' element={<CSRFramework />} />
             <Route path='/infrastructure' element={<Infrastructure />} />
             <Route path="/login" element={<div>login</div>} />
-            <Route path="/Contactus" element={<ContactUs />} />
+            <Route path="/contactus" element={<ContactUs />} />
             <Route path="/media" element={<Media />} />
           </Routes>
           <Footer2 />

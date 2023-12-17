@@ -55,9 +55,15 @@ const UpperNav = ({ onClose, nav }) => {
                     <div>
                         <h2 className='border-b border-b-black text-black font-bold'>Media & Awards</h2>
                         <div className='text-sm text-[#040303]/50 my-2'>
-                            <div>Press & Awards</div>
-                            <div>Blogs</div>
-                            <div>Certifications</div>
+                            <div>
+                                <Link to='/media'>Press & Awards</Link>
+                            </div>
+                            <div>
+                                <Link to='/media'>Blog</Link>
+                            </div>
+                            <div>
+                                <Link to='/media'>Certifications</Link>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -85,7 +91,9 @@ const UpperNav = ({ onClose, nav }) => {
                     <div className='text-black font-bold w-max ml-20 md:w-fit md:ml-0'>
                         <p className='border-b border-b-black w-fit'>Promoters & Journey</p>
                         <Link to='/investor' className='border-b border-b-black w-fit'>Investors</Link>
-                        <p className='border-b border-b-black w-fit'>Contact Us</p>
+                        <p className='border-b border-b-black w-fit'>
+                            <Link to='/contactus'>Contact Us</Link>
+                        </p>
                     </div>
                     <div onClick={() => onClose()} className='cursor-pointer hidden lg:block w-[20%] md:w-fit'>
                         <RxCross2 style={{ fontWeight: 'bolder', fontSize: '25px' }} />

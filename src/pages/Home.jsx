@@ -16,11 +16,11 @@ import Location from '../components/Location'
 import { Link } from 'react-router-dom'
 import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
 
-
+//Animation code starts
 const imageAnimate = {
-    offscreen: { x: -100, opacity: 0 },
-    onscreen: {
-        x: 0,
+    scale: { scale: 0.8, opacity: 0 },
+    scaleAnimation: {
+        scale: 1,
         opacity: 1,
         // rotate: [0, 10, 0],
         transition: {
@@ -28,7 +28,31 @@ const imageAnimate = {
             bounce: 0.4,
             duration: 1
         }
-    }
+    },
+    right: {
+        x: 100, opacity: 0
+    },
+    rightAnimate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            type: "tween",
+            // bounce: 0.4,
+            duration: 1
+        }
+    },
+    left: {
+        x: -100, opacity: 0
+    },
+    leftAnimate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            type: "tween",
+            // bounce: 0.4,
+            duration: 1
+        }
+    },
 
 }
 
@@ -56,6 +80,7 @@ const textVariants = {
         },
     },
 };
+//Animation Code ends
 
 const Home = () => {
     return (
@@ -136,15 +161,15 @@ const Home = () => {
                     <div className='bg-black/70 py-20 px-6'>
                         <Heading name='Our Story' />
                         <motion.div
-                            initial={"offscreen"}
-                            whileInView={"onscreen"}
-                            viewport={{ once: true }}
+                            // initial={"offscreen"}
+                            // whileInView={"onscreen"}
+                            // viewport={{ once: true }}
                             // transition={{ staggerChildren: 0.5 }}
-                            variants={imageAnimate}
+                            // variants={imageAnimate}
                             className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
-                            <Card image={homeImages.heritage} text='Heritage' link='/our-story' />
-                            <Card image={homeImages.corevalues} text='Core Values' link='/our-story' />
-                            <Card image={homeImages.aboutus_bg} text='About Us' link='/our-story' />
+                            <Card image={homeImages.heritage} text='Heritage' link='/our-story' variants={imageAnimate} initial='left' animation='leftAnimate' />
+                            <Card image={homeImages.corevalues} text='Core Values' link='/our-story' variants={imageAnimate} initial='scale' animation='scaleAnimation' />
+                            <Card image={homeImages.aboutus_bg} text='About Us' link='/our-story' variants={imageAnimate} initial='right' animation='rightAnimate' />
                         </motion.div>
                     </div>
                 </div>
@@ -155,10 +180,10 @@ const Home = () => {
                     <div className='py-28'>
                         <Heading name='Brands' />
                         <motion.div
-                            initial={"offscreen"}
-                            whileInView={"onscreen"}
+                            initial={"left"}
+                            whileInView={"leftAnimate"}
                             viewport={{ once: true }}
-                            // transition={{ staggerChildren: 0.5 }}
+                            transition={{ staggerChildren: 0.5 }}
                             variants={imageAnimate}
                             className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 place-items-center'>
                             <Brands img={homeImages.bottle1} text='WHISKY' />
@@ -180,21 +205,33 @@ const Home = () => {
                                 title='Global Presence'
                                 description='6500 kilometers away from Scotland, Jagatjit Industries Limited has created the perfect production facility for making...'
                                 img={homeImages.rect55}
+                                variants={imageAnimate}
+                                initial='scale'
+                                animation='scaleAnimation'
                             />
                             <Infrastructure
                                 title='Technology & Quality'
                                 description='6500 kilometers away from Scotland, Jagatjit Industries Limited has created the perfect production facility for making...'
                                 img={homeImages.rect520}
+                                variants={imageAnimate}
+                                initial='scale'
+                                animation='scaleAnimation'
                             />
                             <Infrastructure
                                 title='Research & Development'
                                 description='6500 kilometers away from Scotland, Jagatjit Industries Limited has created the perfect production facility for making...'
                                 img={homeImages.rect521}
+                                variants={imageAnimate}
+                                initial='scale'
+                                animation='scaleAnimation'
                             />
                             <Infrastructure
                                 title='Plants & Units'
                                 description='6500 kilometers away from Scotland, Jagatjit Industries Limited has created the perfect production facility for making...'
                                 img={homeImages.rect522}
+                                variants={imageAnimate}
+                                initial='scale'
+                                animation='scaleAnimation'
                             />
                         </motion.div>
                     </div>
