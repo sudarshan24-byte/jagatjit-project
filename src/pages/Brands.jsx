@@ -1,105 +1,116 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Cards from '../components/Brands/Cards'
-import { brandsI } from '../assets'
+// Brands.jsx
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Cards from '../components/Brands/Cards';
+import { brandsI } from '../assets';
+import AnimationWrapper from '../components/Animation/BrandsAnimation';
 
 const Brands = () => {
-    return (
-        <div>
-            <Navbar
-                pageName='Brands'
-                links={['Whisky', 'Rum', 'Gin', 'Vodka', 'Brandy', 'Scotch']}
-                width='30'
-            />
+  const sectionAnimation = {
+    initial: { opacity: 0, y: 50 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -50 },
+    transition: { duration: 0.8 },
+    whileTap: { scale: 0.95 },
+  };
 
-            <div className=''>
-                <div className='bg-black/70 px-10 h-full py-20 pt-36'>
+  const scrollAnimation = {
+    initial: { opacity: 0, y: 50 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -50 },
+    transition: { duration: 1 },
+  };
 
-                    <h1 className='text-white/30 text-5xl'>
-                        Whisky
-                    </h1>
+  return (
+    <div>
+      <Navbar
+        pageName='Brands'
+        links={['Whisky', 'Rum', 'Gin', 'Vodka', 'Brandy', 'Scotch']}
+        width='30'
+      />
 
+      <div className=''>
+      <AnimationWrapper animation={scrollAnimation}> 
+        <div className='bg-black/70 px-10 h-full py-20 pt-36'>
 
-                    <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
-                        <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                    </div>
-                    <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
-                        <Cards img={brandsI.thinker} text='Aristocrat Old Reserve' />
-                        <Cards img={brandsI.vodka} text="Binnie'S Fine Whisky" />
-                    </div>
-
-                    <h1 className='text-white/30 text-5xl'>
-                        Rum
-                    </h1>
-
-                    {/* Cards */}
-                    <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
-                        <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                    </div>
-
-                    <h1 className='text-white/30 text-5xl'>
-                        Gin
-                    </h1>
-
-                    {/* Cards */}
-                    <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
-                        <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                    </div>
-                    <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
-                        <Cards img={brandsI.thinker} text='Aristocrat Old Reserve' />
-                        <Cards img={brandsI.vodka} text="Binnie'S Fine Whisky" />
-                    </div>
-
-                    <h1 className='text-white/30 text-5xl'>
-                        Vodka
-                    </h1>
-
-                    {/* Cards */}
-                    <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
-                        <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                    </div>
-                    <h1 className='text-white/30 text-5xl'>
-                        Brandy
-                    </h1>
-
-                    {/* Cards */}
-                    <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
-                        <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                    </div>
-                    <h1 className='text-white/30 text-5xl'>
-                        Scotch
-                    </h1>
-
-                    {/* Cards */}
-                    <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
-                        <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                        <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
-                    </div>
-
-
-                </div>
+          <AnimationWrapper animation={scrollAnimation}>
+          <AnimationWrapper animation={sectionAnimation}>
+            <h1 className='text-white/30 text-5xl'>Whisky</h1>
+            <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
+              <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
             </div>
+          </AnimationWrapper>
+          </AnimationWrapper>
+          <AnimationWrapper animation={scrollAnimation}>
+          <AnimationWrapper animation={sectionAnimation}>
+            <h1 className='text-white/30 text-5xl'>Gin</h1>
+            <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
+              <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+            </div>
+          </AnimationWrapper>
+          </AnimationWrapper>
+          <AnimationWrapper animation={scrollAnimation}>
+          <AnimationWrapper animation={sectionAnimation}>
+            <h1 className='text-white/30 text-5xl'>Vodka</h1>
+            <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
+              <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+            </div>
+          </AnimationWrapper>
+          </AnimationWrapper>
+          <AnimationWrapper animation={scrollAnimation}>
+          <AnimationWrapper animation={sectionAnimation}>
+            <h1 className='text-white/30 text-5xl'>Brandy</h1>
+            <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
+              <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+            </div>
+          </AnimationWrapper>
+          </AnimationWrapper>
+          <AnimationWrapper animation={scrollAnimation}>
+          <AnimationWrapper animation={sectionAnimation}>
+            <h1 className='text-white/30 text-5xl'>Scotch</h1>
+            <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
+              <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+            </div>
+          </AnimationWrapper>
+          </AnimationWrapper>
+          <AnimationWrapper animation={scrollAnimation}>
+          <AnimationWrapper animation={sectionAnimation}>
+            <h1 className='text-white/30 text-5xl'>Whisky</h1>
+            <div className='py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-baseline'>
+              <Cards img={brandsI.bottle1} text='Aristocrat Old Reserve' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+              <Cards img={brandsI.bottle1} text='BinnieS Fine Whisky' />
+            </div>
+          </AnimationWrapper>
+          </AnimationWrapper>
+          
+          
 
+          
+
+          {/* Continue with other sections... */}
 
         </div>
-    )
+        </AnimationWrapper>
+      </div>
+    </div>
+  );
 }
 
-export default Brands
+export default Brands;
