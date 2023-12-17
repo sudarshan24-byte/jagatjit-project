@@ -14,7 +14,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { PiPrinterFill } from "react-icons/pi";
 import Location from '../components/Location'
 import { Link } from 'react-router-dom'
-import { motion, useAnimation, useScroll, useTransform } from "framer-motion";
+import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 
 //Animation code starts
 const imageAnimate = {
@@ -25,8 +25,8 @@ const imageAnimate = {
         // rotate: [0, 10, 0],
         transition: {
             type: "tween",
-            bounce: 0.4,
-            duration: 1
+            staggerChildren: 0.2,
+            duration: 1,
         }
     },
     right: {
@@ -81,6 +81,18 @@ const textVariants = {
     },
 };
 //Animation Code ends
+
+const Counter = ({ from, to, duration }) => {
+    const count = useMotionValue(from);
+    const rounded = useTransform(count, (latest) => Math.round(latest));
+
+    useEffect(() => {
+        const controls = animate(count, to, { duration: duration });
+        return controls.stop;
+    }, []);
+
+    return <motion.p>{rounded}</motion.p>;
+};
 
 const Home = () => {
     return (
@@ -138,20 +150,26 @@ const Home = () => {
                         </motion.div>
 
                         {/* Left Side */}
-                        <motion.div variants={textVariants} className='text-white grid grid-row-3 md:grid-cols-2 lg:grid-cols-3 place-items-start md:place-items-baseline lg:place-items-center w-[40%]'>
+                        <div className='text-white grid grid-row-3 md:grid-cols-2 lg:grid-cols-3 place-items-start md:place-items-baseline lg:place-items-center w-[40%]'>
                             <div className='flex items-center justify-start h-10 rounded-md rounded-s-2xl my-3'>
-                                <div className='text-3xl'>3</div>
+                                <div className='text-3xl'>
+                                    <Counter from={0} to={3} duration={1} />
+                                </div>
                                 <p className='px-3 w-[100%] lg:w-[60%] text-xs'>Third largest producer of IMFL</p>
                             </div>
                             <div className='flex items-center justify-start h-10 rounded-md rounded-s-2xl my-3'>
-                                <div className='text-3xl'>18</div>
+                                <div className='text-3xl'>
+                                    <Counter from={0} to={18} duration={1} />
+                                </div>
                                 <p className='px-3 w-[100%] lg:w-[60%] text-xs'>Manufacturing Units in India</p>
                             </div>
                             <div className='flex items-center justify-start h-10 rounded-md rounded-s-2xl my-3'>
-                                <div className='text-lg lg:text-3xl'>1994</div>
+                                <div className='text-lg lg:text-3xl'>
+                                    <Counter from={0} to={1994} duration={1} />
+                                </div>
                                 <p className='px-3 w-[100%] lg:w-[60%] text-xs'>Since 1994. We've been crafting</p>
                             </div>
-                        </motion.div>
+                        </div>
                     </div>
                 </motion.div>
                 {/* Hero Section Ends */}
@@ -180,18 +198,30 @@ const Home = () => {
                     <div className='py-28'>
                         <Heading name='Brands' />
                         <motion.div
-                            initial={"left"}
-                            whileInView={"leftAnimate"}
+                            initial={"scale"}
+                            whileInView={"scaleAnimation"}
                             viewport={{ once: true }}
                             transition={{ staggerChildren: 0.5 }}
                             variants={imageAnimate}
                             className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 place-items-center'>
-                            <Brands img={homeImages.bottle1} text='WHISKY' />
-                            <Brands img={homeImages.bottle1} text='RUM' />
-                            <Brands img={homeImages.bottle1} text='GIN' />
-                            <Brands img={homeImages.bottle1} text='VODKA' />
-                            <Brands img={homeImages.bottle1} text='BRANDY' />
-                            <Brands img={homeImages.bottle1} text='SCOTCH' />
+                            <motion.div variants={imageAnimate}>
+                                <Brands img={homeImages.bottle1} text='WHISKY' />
+                            </motion.div>
+                            <motion.div variants={imageAnimate}>
+                                <Brands img={homeImages.bottle1} text='RUM' />
+                            </motion.div>
+                            <motion.div variants={imageAnimate}>
+                                <Brands img={homeImages.bottle1} text='GIN' />
+                            </motion.div>
+                            <motion.div variants={imageAnimate}>
+                                <Brands img={homeImages.bottle1} text='VODKA' />
+                            </motion.div>
+                            <motion.div variants={imageAnimate}>
+                                <Brands img={homeImages.bottle1} text='BRANDY' />
+                            </motion.div>
+                            <motion.div variants={imageAnimate}>
+                                <Brands img={homeImages.bottle1} text='SCOTCH' />
+                            </motion.div>
                         </motion.div>
                     </div>
                 </div>

@@ -18,7 +18,7 @@ const CSRFramework = () => {
                         <h1 className='text-white text-5xl pb-7'>
                             Eco Friendly
                         </h1>
-                        <div className=' columns-1 bg-white/10  px-10 py-5'>
+                        <div className=' columns-1 bg-white/10 px-10 py-5'>
                             <div className='flex'>
                                 <div className='border h-fit'>
                                     <img src={csr_framework.eco_friendly} alt="" className='bg-white/5 p-3 rounded-lg' width={420} />

@@ -12,8 +12,8 @@ const variants = {
         x: 0,
         duration: 0.9,
         transition: {
-            opacity: { duration: 0.5 },
-            x: { type: "spring", stiffness: 100, damping: 30 },
+            opacity: { duration: .9 },
+            x: { type: "tween", stiffness: 100, damping: 10 },
         },
     },
     closed: { x: '-100%', opacity: 0, transition: { opacity: { duration: 0.9 }, x: { type: "spring", stiffness: 100, damping: 30 }, } },
