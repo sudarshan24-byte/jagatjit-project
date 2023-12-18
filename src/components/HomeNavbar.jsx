@@ -58,7 +58,7 @@ const HomeNavbar = () => {
                                     <NavLink to='/infrastructure'>Infrastructure</NavLink>
                                 </div>
                                 <div>
-                                    <NavLink to='/white-papers'>White Papers</NavLink>
+                                    <NavLink to='/investor'>White Papers</NavLink>
                                 </div>
                             </div>
                         </div>
@@ -94,12 +94,12 @@ const HomeNavbar = () => {
                     {/* Right */}
                     <div className='hidden lg:block'>
                         <div className='flex items-center justify-between'>
-                            <div className='border px-2 py-1 w-full flex items-center rounded-md'>
+                            {/* <div className='border px-2 py-1 w-full flex items-center rounded-md'>
                                 <input type="text" placeholder='Search' className='bg-transparent focus:outline-none w-[163px]' />
                                 <div>
                                     <AiOutlineSearch />
                                 </div>
-                            </div>
+                            </div> */}
                             <div className='mx-2 cursor-pointer' onClick={toggleUppernav}>
                                 <AiOutlineMenu style={{ fontSize: '25px' }} />
                             </div>

@@ -21,19 +21,19 @@ const Navbar = ({ pageName, link1, link2, link3, handleSectionChange }) => {
                         <div className='hidden lg:block'>
                             <div className='flex justify-between items-center w-[40rem] text-xl text-white/40'>
                                 <div className='hover:text-secondary duration-300'>
-                                    <Link>Home</Link>
+                                    <Link to='/'>Home</Link>
                                 </div>
                                 <div className='hover:text-secondary duration-300'>
-                                    <Link>Our Story</Link>
+                                    <Link to='/our-story'>Our Story</Link>
                                 </div>
                                 <div className='hover:text-secondary duration-300'>
-                                    <Link>Brands</Link>
+                                    <Link to='/brands'>Brands</Link>
                                 </div>
                                 <div className='hover:text-secondary duration-300'>
-                                    <Link>Infrastructure</Link>
+                                    <Link to='/infrastructure'>Infrastructure</Link>
                                 </div>
                                 <div className='hover:text-secondary duration-300'>
-                                    <Link>White Papers</Link>
+                                    <Link to='/investor'>White Papers</Link>
                                 </div>
                                 <div onClick={toggleUppernav} className='cursor-pointer'>
                                     <AiOutlineMenu style={{ fontSize: '25px', color: 'white' }} />
