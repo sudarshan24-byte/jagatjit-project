@@ -121,7 +121,7 @@ const Home = () => {
                         {/* <img src={rect27} alt="" /> */}
                     </div>
 
-                    <img src={rect27} alt="" className='absolute bottom-[8.5rem] lg:bottom-24' />
+                    <img src={rect27} alt="" className='absolute bottom-[8.5rem] lg:bottom-20' />
 
                     <div className='max-w-full px-5 md:px-10 py-12 relative flex justify-between items-center h-full bg-primary-bg'>
                         {/* Right Side */}
@@ -176,7 +176,7 @@ const Home = () => {
 
                 {/* Our Story */}
                 <div className='w-full h-full story-bg bg-cover'>
-                    <div className='bg-black/70 py-20 px-6'>
+                    <div className='bg-black/50 py-20 px-6'>
                         <Heading name='Our Story' />
                         <motion.div
                             // initial={"offscreen"}
@@ -195,7 +195,7 @@ const Home = () => {
 
                 {/* Brands */}
                 <div className='brands-bg bg-cover bg-center'>
-                    <div className='py-28'>
+                    <div className='bg-black/30 py-28'>
                         <Heading name='Brands' />
                         <motion.div
                             initial={"scale"}
@@ -228,7 +228,7 @@ const Home = () => {
 
                 {/* Infrastructure */}
                 <motion.div className='infrastructure-bg relative bg-cover bg-center'>
-                    <div className='bg-black/60 py-5'>
+                    <div className='bg-black/30 py-5'>
                         <Heading name='Infrastructure' />
                         <motion.div className='grid grid-cols-1 lg:grid-cols-2 place-items-center py-6'>
                             <Infrastructure
@@ -269,7 +269,7 @@ const Home = () => {
 
                 {/* White Papers */}
                 <div className='White-bg bg-cover bg-center'>
-                    <div className=' bg-black/60'>
+                    <div className=' bg-black/30'>
                         <div className='relative'>
                             <Heading name='White Papers' />
                         </div>

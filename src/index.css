@@ -35,27 +35,27 @@ body {
 
 /* Home Section */
 .hero-bg {
-    background-image: url('/Home-Images/HeroBg.png');
+    background-image: url('/Home-Images/Damn-Good-Bar.jpg');
     background-repeat: no-repeat;
 }
 
 .story-bg {
-    background-image: url('/Home-Images/wine-barrel.jpg');
+    background-image: url('/Home-Images/13.png');
     background-repeat: no-repeat;
 }
 
 .brands-bg {
-    background-image: url('/Home-Images/Rectangle59.png');
+    background-image: url('/Home-Images/11.png');
     background-repeat: no-repeat;
 }
 
 .infrastructure-bg {
-    background-image: url('/Home-Images/Infrastructure-bg-cp.png');
+    background-image: url('/Home-Images/MYR_5809.jpg');
     background-repeat: no-repeat;
 }
 
 .White-bg {
-    background-image: url('/Home-Images/white.png');
+    background-image: url('/Home-Images/DG-Charcoal.jpg');
     background-repeat: no-repeat;
 }
 
@@ -73,18 +73,22 @@ body {
     background-image: url('/blog/blogd.png');
     background-repeat: no-repeat;
 }
+
 .Infrastructure1-bg {
     background-image: url('/Infrastructure/baground.png');
     background-repeat: no-repeat;
 }
+
 .Infrastructure2-bg {
     background-image: url('/Infrastructure/baground2.png');
     background-repeat: no-repeat;
 }
+
 .Infrastructure3-bg {
     background-image: url('/Infrastructure/baground3.png');
     background-repeat: no-repeat;
 }
+
 .Infrastructure4-bg {
     background-image: url('/Infrastructure/baground4.png');
     background-repeat: no-repeat;
@@ -94,14 +98,17 @@ body {
     background-image: url('/CSRFramework/CsrFram.png');
     background-repeat: no-repeat;
 }
+
 .ContactUS-bg {
     background-image: url('/ContactUs/ContactUsBag.png');
     background-repeat: no-repeat;
 }
+
 .MediaDocument-bg {
     background-image: url('/MediaAndAwards/baground.png');
     background-repeat: no-repeat;
 }
+
 .Media-bg {
     background-image: url('/MediaAndAwards/bagr.png');
     background-repeat: no-repeat;

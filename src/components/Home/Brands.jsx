@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Brands = ({ img, text }) => {
     return (
         <Link to='/brands'>
-            <div className='w-fit bg-card-bg hover:bg-black shadow-md px-7 py-4 rounded-lg mb-3 lg:mb-0 group relative'>
+            <div className='w-fit backdrop-blur-xl hover:bg-black shadow-md px-7 py-4 rounded-lg mb-3 lg:mb-0 group relative'>
                 <div className='group-hover:opacity-30 duration-300'>
                     <img src={img} alt="Brand Image" className='' width={90} />
                 </div>

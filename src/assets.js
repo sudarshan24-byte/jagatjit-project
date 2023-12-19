@@ -41,6 +41,9 @@ import Media_11 from '/MediaAndAwards/Media-11.png'
 import Media_22 from '/MediaAndAwards/Media-22.png'
 import Media_33 from '/MediaAndAwards/Media-33.png'
 import documentt from '/MediaAndAwards/documnet.png'
+import DG from '/Home-Images/Brands/DG.png'
+import Vodka from '/Home-Images/Brands/Vodka.png'
+import RoyalPride from '/Home-Images/Brands/RoyalPride.png'
 
 
 export const logoimg = {
@@ -65,7 +68,10 @@ export const homeImages = {
     icons2,
     icons3,
     icons4,
-    location
+    location,
+    DG,
+    Vodka,
+    RoyalPride
 }
 
 export const footerImages = {
